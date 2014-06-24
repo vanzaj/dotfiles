@@ -1,0 +1,38 @@
+[user]
+    name = Ivan
+    email = vanzaj@gmail.com
+[alias]
+    br = branch
+    brav = branch -a -v
+    ci = commit
+    co = checkout
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    logs = log --stat
+    st = status
+    undopush = push -f origin HEAD^:master
+    unstage = reset HEAD
+[core]
+    excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes
+    whitespace = space-before-tab,indent-with-non-tab,trailing-space
+[color]
+    ui = auto
+    status = auto
+    branch = auto
+    diff = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[merge]
+    log = true
+
