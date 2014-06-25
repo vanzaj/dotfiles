@@ -8,9 +8,9 @@
     co = checkout
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     logs = log --stat
-    st = status
+    st = status -sb
     undopush = push -f origin HEAD^:master
-    unstage = reset HEAD
+    unstage = reset HEAD --
 [core]
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
@@ -35,4 +35,6 @@
     untracked = cyan
 [merge]
     log = true
+[push]
+    default = simple
 

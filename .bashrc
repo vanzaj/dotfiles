@@ -12,7 +12,7 @@ alias del='/bin/rm -f'
 export HISTSIZE=2000
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoreboth
-export HISTIGNORE="ls:la:l:h:cd:pwd:exit"
+export HISTIGNORE="ls:la:l:h:history:cd:pwd:exit"
 
 export EDITOR="vim"
 
